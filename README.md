@@ -37,6 +37,9 @@ python -m venv .venv
 pip install -r requirements.txt
 ```
 5. Jalankan Script
+
+**Penting:** Sebelum menjalankan `train_model.py`, ubah nilai variabel `dataset_dir` sesuai dengan lokasi folder images di komputer masing-masing.
+
 Jika sudah melakukan langkah-langkah sebelumnya, kode dapat dijalankan. Jika ingin melatih ulang model:
 ```
 python train_model.py
