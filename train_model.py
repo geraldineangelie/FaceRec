@@ -12,7 +12,7 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.metrics import classification_report
 
 # ==== CONFIGURATION ====
-dataset_dir = 'D:/FaceRecog/images'
+dataset_dir = 'C:/FaceRecognition/images'
 face_size = (128, 128)
 random_state = 177
 
