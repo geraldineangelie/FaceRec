@@ -32,9 +32,9 @@ cd Face-Recognition-Project-Eigenfaces
 python -m venv .venv
 .venv/Scripts/activate
 ```
-4. Install Package
+4. Install Requirements
 ```
-pip install -r packages.txt
+pip install -r requirements.txt
 ```
 5. Jalankan Script
 Jika sudah melakukan langkah-langkah sebelumnya, kode dapat dijalankan. Jika ingin melatih ulang model:
