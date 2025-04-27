@@ -38,7 +38,15 @@ pip install -r requirements.txt
 ```
 5. Jalankan Script
 
-**Penting:** Sebelum menjalankan `train_model.py`, ubah nilai variabel `dataset_dir` sesuai dengan lokasi folder images di komputer masing-masing.
+**Penting:** Sebelum menjalankan training, pastikan variabel dataset_dir pada script train_model.py sudah disesuaikan dengan path folder images di komputer masing-masing karena sudah menggunakan argparse pada kode.
+
+Training model bisa langsung dilakukan tanpa perlu mengedit kode.
+Path dataset sekarang sudah bisa diatur via command-line menggunakan --dataset_dir.
+
+Contoh:
+```
+python train_model.py --dataset_dir "C:/path/ke/folder/images"
+```
 
 Jika sudah melakukan langkah-langkah sebelumnya, kode dapat dijalankan. Jika ingin melatih ulang model:
 ```
