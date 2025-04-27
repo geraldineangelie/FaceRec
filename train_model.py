@@ -3,6 +3,7 @@ import cv2
 import numpy as np
 import pickle
 import matplotlib.pyplot as plt
+import argparse 
 from sklearn.model_selection import train_test_split, GridSearchCV
 from sklearn.pipeline import Pipeline
 from sklearn.svm import SVC
@@ -11,13 +12,20 @@ from sklearn.base import BaseEstimator, TransformerMixin
 from sklearn.preprocessing import StandardScaler
 from sklearn.metrics import classification_report
 
+# === ARGPARSE, agar kode mudah dijalankan di local lain ===
+parser = argparse.ArgumentParser(description='Train face recognition model.')
+parser.add_argument('--dataset_dir', type=str, default='C:/FaceRecognition/images',
+                    help='Path ke folder dataset images')
+args = parser.parse_args()
+
+dataset_dir = args.dataset_dir
+
+
 # ==== CONFIGURATION ====
-dataset_dir = 'D:/FaceRecog/images'
 face_size = (128, 128)
 random_state = 177
 
 # ==== FUNCTIONS ====
-
 # Load image
 def load_image(image_path):
     image = cv2.imread(image_path)
