@@ -7,13 +7,13 @@ Dataset berisi gambar wajah dari 9 orang, masing-masing terdiri dari 20 gambar. 
 ---
 
 ## Struktur Folder
-- `README.md` — Dokumentasi project.
-- `train_model.py` — Code untuk melatih model Eigenfaces + SVM dari dataset gambar.
-- `webcam_face_recognition.py` — Code untuk menjalankan face recognition secara real-time dengan webcam.
-- `eigenface_pipeline.pkl` — File model hasil training.
-- `images/` — Folder berisi dataset gambar wajah untuk training.
-- `requirements.txt` — Daftar library Python yang diperlukan.
-- `results/` — Folder berisi hasil testing, seperti screenshot atau video demo.
+- `README.md` — Instruksi
+- `train_model.py` — Code untuk melatih model Eigenfaces + SVM dari dataset gambar
+- `webcam_face_recognition.py` — Code untuk menjalankan face recognition secara real-time dengan webcam
+- `eigenface_pipeline.pkl` — File model hasil training
+- `images/` — Folder berisi dataset gambar wajah untuk training
+- `requirements.txt` — Daftar library Python yang diperlukan
+- `results/` — Folder berisi hasil testing (screenshot dan video demo)
   
 ---
 
